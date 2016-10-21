@@ -5,6 +5,7 @@
 
 @import "gallery";
 @import "controls";
+@import "star-rating";
 @import "responsive";
 
 
@@ -20,7 +21,7 @@ body {
 	font-family: $base-font-family;
 	font-size: $base-font-size;
 
-	background: $color-body url('../imgs/background.jpg') no-repeat;
+	background: $color-body url('../imgs/background.jpg') no-repeat center center;
 	background-size: cover;
 }
 
