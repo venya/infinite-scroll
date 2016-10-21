@@ -1,0 +1,29 @@
+
+$ui-rating-height: 10px;
+$ui-rating-width: 10px;
+$ui-rating-spacing: 2px;
+$ui-rating-steps: 5;
+$ui-rating-sprite: "../imgs/ui-stars.png";
+
+.ui-rating {
+	display: inline-block;
+	height: $ui-rating-height;
+	width: ($ui-rating-width + $ui-rating-spacing) * $ui-rating-steps - $ui-rating-spacing;
+	background: url($ui-rating-sprite) repeat-x;
+
+	&:before {
+		content: "";
+		display: block;
+		background: inherit;
+		background-position: 0 -16px;
+		height: $ui-rating-height;
+		width: 0;
+	}
+
+	// Define states for every possible rating, ex: .ui-rating-5
+	@for $i from 1 through $ui-rating-steps {
+		&-#{$i}:before {
+			width: $i * 100%/$ui-rating-steps;
+		}
+	}
+}

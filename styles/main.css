@@ -55,7 +55,7 @@ table {
     .gallery-item-photo {
       display: block;
       width: 100%;
-      margin-bottom: 10px; }
+      margin-bottom: 13px; }
     .gallery-item-title {
       text-align: center;
       text-transform: uppercase;
@@ -64,9 +64,8 @@ table {
       color: #999999;
       font-size: 11px; }
     .gallery-item-rating {
-      display: block; }
-      .gallery-item-rating:before {
-        content: "*****"; }
+      display: block !important;
+      margin: 0 auto 12px; }
 
 .btn {
   border: none;
@@ -78,6 +77,29 @@ table {
 .controls {
   text-align: center;
   line-height: 40px; }
+
+.ui-rating {
+  display: inline-block;
+  height: 10px;
+  width: 58px;
+  background: url("../imgs/ui-stars.png") repeat-x; }
+  .ui-rating:before {
+    content: "";
+    display: block;
+    background: inherit;
+    background-position: 0 -16px;
+    height: 10px;
+    width: 0; }
+  .ui-rating-1:before {
+    width: 20%; }
+  .ui-rating-2:before {
+    width: 40%; }
+  .ui-rating-3:before {
+    width: 60%; }
+  .ui-rating-4:before {
+    width: 80%; }
+  .ui-rating-5:before {
+    width: 100%; }
 
 @media (max-width: 870px) {
   .gallery-item {
@@ -94,7 +116,7 @@ body {
   margin: 200px 100px;
   font-family: Arial, sans-serif;
   font-size: 12px;
-  background: #675e71 url("../imgs/background.jpg") no-repeat;
+  background: #675e71 url("../imgs/background.jpg") no-repeat center center;
   background-size: cover; }
 
 .container {

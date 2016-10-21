@@ -16,7 +16,7 @@
 		&-photo {
 			display: block;
 			width: 100%;
-			margin-bottom: 10px;
+			margin-bottom: 13px;
 		}
 		&-title {
 			text-align: center;
@@ -28,10 +28,8 @@
 			font-size: 11px;
 		}
 		&-rating {
-			display: block;
-			&:before {
-				content: "*****"
-			}
+			display: block !important;
+			margin: 0 auto 12px;
 		}
 	}
 }
