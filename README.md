@@ -3,6 +3,8 @@
 Implementation of Test Assignment for a position of Front-End Developer.
 Original requirements and materials located in /assignemnt folder.
 
+You can see [Online Demo](https://https://venya.github.io/infinite-scroll/).
+
 ## HTML & CSS coding
 
 1. Create a html & css layout;
