@@ -130,9 +130,12 @@ body {
   min-height: 100%;
   margin: 200px 100px;
   font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-size: 12px; }
+
+.page-bg {
   background: #675e71 url("../imgs/background.jpg") no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .container {
   max-width: 1000px;

@@ -21,8 +21,12 @@ body {
 	font-family: $base-font-family;
 	font-size: $base-font-size;
 
+}
+
+.page-bg {
 	background: $color-body url('../imgs/background.jpg') no-repeat center center;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 .container {
