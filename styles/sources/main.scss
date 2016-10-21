@@ -2,11 +2,11 @@
 @import "variables";
 @import "reset";
 @import "mixins";
+@import "responsive";
 
 @import "gallery";
 @import "controls";
 @import "star-rating";
-@import "responsive";
 
 
 // Globally used classes
@@ -32,7 +32,7 @@ body {
 .container {
 	max-width: $layout-container-max-width;
 	margin: 0 auto;
-	background: rgba(0,0,0, 0.1);
+	// background: rgba(0,0,0, 0.1);
 }
 
 .hide {

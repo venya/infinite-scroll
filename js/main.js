@@ -1,5 +1,6 @@
+
 $(function() {
-	console.log('init');
+	// console.log('init');
 	var autoloadTimer;
 	var gallery = $('.gallery');
 	var marker = $('.gallery-scroll-marker').get(0);
@@ -12,9 +13,8 @@ $(function() {
 	$('#gallery-autoload').click(function() {
 		if (this.checked) {
 			$('#gallery-load-more').addClass('hide')
-			console.log('enable autoload');
+			// enable autoload
 			autoloadTimer = window.setInterval(function(){
-				// console.log('tick.');
 				var rect = marker.getBoundingClientRect();
 				if (rect.top < window.innerHeight) {
 					galleryLoadMore();
@@ -22,13 +22,12 @@ $(function() {
 			}, 1000);
 		} else {
 			$('#gallery-load-more').removeClass('hide')
-			console.log('disable autoload');
+			// disable autoload
 			window.clearInterval(autoloadTimer);
 		}
 	});
 
 	function galleryLoadMore() {
-		console.log('Load more...');
 		var xhr = $.ajax({
 			dataType: "json",
   			url: "data/items.json",

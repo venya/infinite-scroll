@@ -1,16 +1,17 @@
 
 
-@media (max-width: $responsive-breakpoint-large) {
-	.gallery-item {
-		width: 50%;
+@mixin responsive($size) {
+	@if $size == large {
+		@media (min-width: $responsive-breakpoint-large)
+			{ @content; }
 	}
-}
-
-
-@media (max-width: $responsive-breakpoint-medium) {
-	.gallery-item {
-		float: none;
-		max-width: none;
-		width: auto;
+	@else if $size == medium {
+		@media (min-width: $responsive-breakpoint-medium)
+		   and (max-width: $responsive-breakpoint-large)
+		 	{ @content; }
+	}
+	@else if $size == small {
+		@media (max-width: $responsive-breakpoint-medium)
+			{ @content; }
 	}
 }

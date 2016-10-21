@@ -1,17 +1,13 @@
 
 .gallery {
 	@include clearfix;
-	margin-right: -$gallery-card-spacing;
 
 	&-item {
 		float: left;
 		background: $gallery-card-background-color;
 		padding: $gallery-card-padding;
-		margin: 0 $gallery-card-spacing $gallery-card-spacing 0;
+		margin-bottom: $gallery-card-spacing;
 		@include box-sizing(border-box);
-		width: 34%;
-		max-width: $gallery-card-max-width;
-		min-width: $gallery-card-min-width;
 		line-height: 1.3;
 		color: $color-black;
 
@@ -33,5 +29,26 @@
 			display: block !important;
 			margin: 0 auto 12px;
 		}
+
+		// Adaptive layout
+		@include responsive(large) {
+			float: left;
+			width: 30%;
+			margin-right: 5%;
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+		@include responsive(medium) {
+			float: left;
+			width: 46%;
+			margin-right: 8%;
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+
 	}
 }

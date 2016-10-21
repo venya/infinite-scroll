@@ -29,5 +29,5 @@ $button-text-color: $color-white;
 
 // Responsive layout thresholds
 $responsive-breakpoint-large: $gallery-card-min-width*3 + $gallery-card-spacing*2 + $layout-h-margin*2; // 3 items per row
-$responsive-breakpoint-medium: $gallery-card-max-width + $layout-h-margin*2; // 2 items per row
+$responsive-breakpoint-medium: $gallery-card-min-width*2 + $gallery-card-spacing + $layout-h-margin*2; // 2 items per row
 $responsive-breakpoint-small: 480px;
