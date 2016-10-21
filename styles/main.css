@@ -1,5 +1,103 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   Eric Meyer's "Reset CSS" v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.gallery {
+  margin-right: -50px; }
+  .gallery:before, .gallery:after {
+    content: "";
+    display: table; }
+  .gallery:after {
+    clear: both; }
+  .gallery-item {
+    float: left;
+    background: #fff;
+    padding: 20px;
+    margin: 0 50px 50px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 34%;
+    max-width: 300px;
+    line-height: 1.3; }
+    .gallery-item-photo {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px; }
+    .gallery-item-title {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 10px; }
+    .gallery-item-description {
+      color: #999999;
+      font-size: 11px; }
+    .gallery-item-rating {
+      display: block; }
+      .gallery-item-rating:before {
+        content: "*****"; }
+
+.btn {
+  border: none;
+  background: orange;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px; }
+
+.controls {
+  text-align: center;
+  line-height: 40px; }
+
+@media (max-width: 870px) {
+  .gallery-item {
+    width: 50%; } }
+@media (max-width: 600px) {
+  .gallery-item {
+    width: 100%;
+    max-width: auto; } }
+html {
+  min-height: 100%; }
 
 body {
-	margin: 200px 100px;
-}
+  min-height: 100%;
+  margin: 200px 100px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  background: #675e71 url("../imgs/background.jpg") no-repeat;
+  background-size: cover; }
 
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.1); }

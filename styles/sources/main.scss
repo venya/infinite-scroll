@@ -1,0 +1,31 @@
+
+@import "variables";
+@import "reset";
+@import "mixins";
+
+@import "gallery";
+@import "controls";
+@import "responsive";
+
+
+// Globally used classes
+
+html {
+	min-height: 100%;
+}
+
+body {
+	min-height: 100%;
+	margin: $layout-v-margin $layout-h-margin;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+
+	background: $color-body url('../imgs/background.jpg') no-repeat;
+	background-size: cover;
+}
+
+.container {
+	max-width: $layout-container-max-width;
+	margin: 0 auto;
+	background: rgba(0,0,0, 0.1);
+}

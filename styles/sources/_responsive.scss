@@ -1,0 +1,15 @@
+
+
+@media (max-width: $responsive-breakpoint-large) {
+	.gallery-item {
+		width: 50%;
+	}
+}
+
+
+@media (max-width: $responsive-breakpoint-medium) {
+	.gallery-item {
+		width: 100%;
+		max-width:  auto;
+	}
+}

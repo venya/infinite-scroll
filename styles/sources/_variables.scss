@@ -1,0 +1,33 @@
+
+$color-white: #fff;
+$color-black: #000;
+$color-accent: orange;
+$color-silver: #999999;
+$color-body: #675e71;
+
+// Gallery properties
+$gallery-card-padding: 20px;
+$gallery-card-spacing: 50px;
+$gallery-card-min-width: 190px;
+$gallery-card-max-width: 300px;
+$gallery-card-background-color: $color-white;
+
+$layout-h-margin: 100px;
+$layout-v-margin: 200px;
+$layout-container-max-width: $gallery-card-max-width*3 + $gallery-card-spacing*2;
+
+$base-font-family: Arial, sans-serif;
+$base-font-size: 12px;
+
+// Input controls
+$input-height: 40px;
+$input-font-size: 14px;
+$input-h-padding: 20px;
+$button-color: $color-accent;
+$button-text-color: $color-white;
+
+
+// Responsive layout thresholds
+$responsive-breakpoint-large: $gallery-card-min-width*3 + $gallery-card-spacing*2 + $layout-h-margin*2; // 3 items per row
+$responsive-breakpoint-medium: 600px; // 2 items per row
+$responsive-breakpoint-small: 480px;
