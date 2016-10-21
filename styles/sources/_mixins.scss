@@ -5,6 +5,12 @@
 	box-sizing: $box-model;
 }
 
+@mixin box-shadow($params) {
+	-webkit-box-shadow: $params; // Safari <= 5
+	-moz-box-shadow: $params; // Firefox <= 19
+	box-shadow: $params;
+}
+
 @mixin border-radius($radius) {
 	-webkit-border-radius: $radius;
 	border-radius: $radius;

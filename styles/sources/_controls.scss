@@ -5,11 +5,26 @@
 	background: $button-color;
 	height: $input-height;
 	line-height: $input-height;
+	font-size: $input-font-size;
 	padding: 0 $input-h-padding;
+
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		@include box-shadow(1px 1px 4px rgba(0,0,0, .3));
+	}
+	&:active {
+		@include box-shadow(inset 2px 2px 5px rgba(0,0,0, .3));
+	}
 }
 
 
 .controls {
 	text-align: center;
 	line-height: $input-height;
+
+	.btn {
+		margin: 0 $input-h-padding;
+	}
 }
