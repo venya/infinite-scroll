@@ -52,7 +52,8 @@ table {
     width: 34%;
     max-width: 300px;
     min-width: 190px;
-    line-height: 1.3; }
+    line-height: 1.3;
+    color: #000; }
     .gallery-item-photo {
       display: block;
       width: 100%;
@@ -130,7 +131,8 @@ body {
   min-height: 100%;
   margin: 200px 100px;
   font-family: Arial, sans-serif;
-  font-size: 12px; }
+  font-size: 12px;
+  color: #fff; }
 
 .page-bg {
   background: #675e71 url("../imgs/background.jpg") no-repeat center center;

@@ -2,6 +2,7 @@ $(function() {
 	console.log('init');
 	var autoloadTimer;
 	var gallery = $('.gallery');
+	var marker = $('.gallery-scroll-marker').get(0);
 	galleryLoadMore();
 
 	$('#gallery-load-more').click(function() {
@@ -14,8 +15,11 @@ $(function() {
 			console.log('enable autoload');
 			autoloadTimer = window.setInterval(function(){
 				// console.log('tick.');
-				galleryLoadMore();
-			}, 2000);
+				var rect = marker.getBoundingClientRect();
+				if (rect.top < window.innerHeight) {
+					galleryLoadMore();
+				}
+			}, 1000);
 		} else {
 			$('#gallery-load-more').removeClass('hide')
 			console.log('disable autoload');
